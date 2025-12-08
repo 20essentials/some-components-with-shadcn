@@ -1,9 +1,14 @@
 import { AccordionDemo } from '@/components/myComponents/accordion';
+import './accordion.css';
+
+export const metadata = {
+  title: 'Accordion'
+};
 
 export default function Page() {
   return (
-    <article className='page'>
+    <section className='page'>
       <AccordionDemo />
-    </article>
+    </section>
   );
 }
