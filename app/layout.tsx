@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Shadcn UI Practice",
   description: "NextJs + Shadcn",
+  icons: {
+    icon: '/assets/favicon.png'
+  }
 };
 
 export default function RootLayout({

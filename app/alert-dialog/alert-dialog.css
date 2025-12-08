@@ -5,7 +5,7 @@
   overflow: hidden;
   flex-wrap: wrap;
   place-content: center;
-  background-image: url('/assets/accordion-bg.svg');
+  background-image: url('/assets/alert-dialog-bg.svg');
   
   * {
     cursor: pointer;

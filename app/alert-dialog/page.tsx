@@ -1,4 +1,4 @@
-import { AccordionDemo } from '@/app/accordion/accordion';
+import { AlertDialogDemo } from '@/app/alert-dialog/alert-dialog';
 import './alert-dialog.css';
 
 export const metadata = {
@@ -8,7 +8,7 @@ export const metadata = {
 export default function Page() {
   return (
     <section className='page'>
-      <AccordionDemo />
+      <AlertDialogDemo />
     </section>
   );
 }

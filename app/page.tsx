@@ -9,8 +9,8 @@ const linksToComponents = [
 export default function Home() {
   return (
     <nav className='am-navbar'>
-      {linksToComponents.map(({ title }, i) => (
-        <Link key={i} href={title} className='am-link'>
+      {linksToComponents.map(({ title, href }, i) => (
+        <Link key={i} href={href} className='am-link'>
           {title}
         </Link>
       ))}
