@@ -1,8 +1,8 @@
 import { AccordionDemo } from '@/app/accordion/accordion';
-import './accordion.css';
+import './alert-dialog.css';
 
 export const metadata = {
-  title: 'Accordion'
+  title: 'Alert Dialog'
 };
 
 export default function Page() {

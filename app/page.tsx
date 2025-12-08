@@ -1,6 +1,10 @@
 import Link from 'next/link';
 
-const linksToComponents = [{ title: 'accordion' }];
+const linksToComponents = [
+  { title: 'Accordion' , href: 'accordion'},
+  { title: 'Alert Dialog' , href: 'alert-dialog'},
+  { title: 'Buttons' , href: 'buttons'},
+];
 
 export default function Home() {
   return (
