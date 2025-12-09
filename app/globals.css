@@ -126,6 +126,8 @@
   width: 100%;
   flex-direction: column;
   background-color: orange;
+  display: flex;
+  padding: 0.4vmax;
 
   .am-link {
     text-transform: capitalize !important;
