@@ -4,6 +4,7 @@ const linksToComponents = [
   { title: 'Accordion' , href: 'accordion'},
   { title: 'Alert Dialog' , href: 'alert-dialog'},
   { title: 'Buttons' , href: 'buttons'},
+  { title: 'Dialog Share Link' , href: 'dialog-share-link'},
 ];
 
 export default function Home() {
