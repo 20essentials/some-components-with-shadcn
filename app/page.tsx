@@ -8,6 +8,7 @@ const linksToComponents = [
   { title: 'Dialog Input' , href: 'dialog-input'},
   { title: 'Badge' , href: 'badge'},
   { title: 'Simple Login Form' , href: 'simple-login-form'},
+  { title: 'Calendar' , href: 'calendar'},
 ];
 
 export default function Home() {
