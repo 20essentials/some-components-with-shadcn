@@ -9,6 +9,7 @@ const linksToComponents = [
   { title: 'Badge' , href: 'badge'},
   { title: 'Simple Login Form' , href: 'simple-login-form'},
   { title: 'Calendar' , href: 'calendar'},
+  { title: 'Multiple Calendar Select' , href: 'multiple-calendar-select'},
 ];
 
 export default function Home() {
