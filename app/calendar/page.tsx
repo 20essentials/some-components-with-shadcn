@@ -13,6 +13,7 @@ export default function Page() {
         className='am-video'
         autoPlay
         muted
+        loop
       ></video>
       <ClientComponent />
     </section>
