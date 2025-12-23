@@ -13,6 +13,8 @@ const linksToComponents = [
   { title: 'Avatar' , href: 'avatar'},
   { title: 'Card Login' , href: 'card-login'},
   { title: 'Carousel 1x1' , href: 'carousel-1x1'},
+  { title: 'Carousel 1x5' , href: 'carousel-1x5'},
+  { title: 'Carousel Vertical' , href: 'carousel-vertical'},
 ];
 
 export default function Home() {
