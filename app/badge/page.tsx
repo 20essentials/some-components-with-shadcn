@@ -1,7 +1,7 @@
 import { BadgeCheckIcon } from 'lucide-react';
 
 import { Badge } from '@/components/ui/badge';
-import './badge.css';
+import './mystyles.css';
 
 export const metadata = {
   title: 'Badge'

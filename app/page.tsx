@@ -12,6 +12,7 @@ const linksToComponents = [
   { title: 'Multiple Calendar Select' , href: 'multiple-calendar-select'},
   { title: 'Avatar' , href: 'avatar'},
   { title: 'Card Login' , href: 'card-login'},
+  { title: 'Carousel 1x1' , href: 'carousel-1x1'},
 ];
 
 export default function Home() {
