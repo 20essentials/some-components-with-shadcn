@@ -12,9 +12,9 @@ const linksToComponents = [
   { title: 'Multiple Calendar Select' , href: 'multiple-calendar-select'},
   { title: 'Avatar' , href: 'avatar'},
   { title: 'Card Login' , href: 'card-login'},
-  { title: 'Carousel 1x1' , href: 'carousel-1x1'},
+  { title: 'Carousel 1x1 + Loop' , href: 'carousel-1x1'},
   { title: 'Carousel 1x5' , href: 'carousel-1x5'},
-  { title: 'Carousel Vertical' , href: 'carousel-vertical'},
+  { title: 'Carousel Vertical + Autoplay' , href: 'carousel-vertical'},
 ];
 
 export default function Home() {

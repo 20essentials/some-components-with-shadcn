@@ -22,7 +22,9 @@ export default function Page() {
         loop
         className='am-video-bg'
       ></video>
-      <Carousel className='w-full max-w-xs select-none'>
+      <Carousel className='w-full max-w-xs select-none' opts={{
+        loop: true
+      }}>
         <CarouselContent>
           {Array.from({ length: 5 }).map((_, index) => (
             <CarouselItem key={index}>

@@ -1,3 +1,4 @@
+'use client';
 import { Card, CardContent } from '@/components/ui/card';
 import {
   Carousel,
@@ -6,17 +7,17 @@ import {
   CarouselNext,
   CarouselPrevious
 } from '@/components/ui/carousel';
+import Autoplay from 'embla-carousel-autoplay';
 import './mystyles.css';
-
-export const metadata = {
-  title: 'Carousel 1x5'
-};
+import { useRef } from 'react';
 
 export default function Page() {
+  const plugin = useRef(Autoplay({ delay: 2000 }));
+
   return (
     <section className='page'>
       <video
-        src='/assets/background-carousel-1x5.mp4'
+        src='/assets/background-carousel-vertical.mp4'
         autoPlay
         muted
         loop
@@ -26,14 +27,16 @@ export default function Page() {
         opts={{
           align: 'start'
         }}
-        className='w-full max-w-sm select-none'
+        plugins={[plugin.current]}
+        orientation='vertical'
+        className='w-full max-w-xs select-none'
       >
-        <CarouselContent>
+        <CarouselContent className='-mt-1 h-[200px]'>
           {Array.from({ length: 5 }).map((_, index) => (
-            <CarouselItem key={index} className='md:basis-1/2 lg:basis-1/3'>
+            <CarouselItem key={index} className='pt-1 md:basis-1/2'>
               <div className='p-1'>
                 <Card>
-                  <CardContent className='flex aspect-square items-center justify-center p-6'>
+                  <CardContent className='flex items-center justify-center p-6'>
                     <span className='text-3xl font-semibold'>{index + 1}</span>
                   </CardContent>
                 </Card>
