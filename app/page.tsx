@@ -15,6 +15,7 @@ const linksToComponents = [
   { title: 'Carousel 1x1 + Loop' , href: 'carousel-1x1'},
   { title: 'Carousel 1x5' , href: 'carousel-1x5'},
   { title: 'Carousel Vertical + Autoplay' , href: 'carousel-vertical'},
+  { title: 'Checkbox' , href: 'checkbox'},
 ];
 
 export default function Home() {
