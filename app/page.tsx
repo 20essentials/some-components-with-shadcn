@@ -17,6 +17,7 @@ const linksToComponents = [
   { title: 'Carousel Vertical + Autoplay' , href: 'carousel-vertical'},
   { title: 'Checkbox' , href: 'checkbox'},
   { title: 'Command' , href: 'command'},
+  { title: 'Command Dialog' , href: 'command-dialog'},
 ];
 
 export default function Home() {
