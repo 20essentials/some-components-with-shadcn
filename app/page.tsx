@@ -20,6 +20,7 @@ const linksToComponents = [
   { title: 'Command Dialog', href: 'command-dialog' },
   { title: 'Popover', href: 'popover' },
   { title: 'Combobox', href: 'combobox' },
+  { title: 'Combobox Lip', href: 'combobox-lip' },
 ];
 
 export default function Home() {
