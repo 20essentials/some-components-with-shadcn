@@ -18,7 +18,8 @@ const linksToComponents = [
   { title: 'Checkbox', href: 'checkbox' },
   { title: 'Command', href: 'command' },
   { title: 'Command Dialog', href: 'command-dialog' },
-  { title: 'Popover', href: 'popover' }
+  { title: 'Popover', href: 'popover' },
+  { title: 'Combobox', href: 'combobox' },
 ];
 
 export default function Home() {
