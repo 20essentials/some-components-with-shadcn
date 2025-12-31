@@ -21,6 +21,7 @@ const linksToComponents = [
   { title: 'Popover', href: 'popover' },
   { title: 'Combobox', href: 'combobox' },
   { title: 'Combobox Lip', href: 'combobox-lip' },
+  { title: 'Context Menu', href: 'context-menu' },
 ];
 
 export default function Home() {
