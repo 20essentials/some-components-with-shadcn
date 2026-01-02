@@ -22,6 +22,7 @@ const linksToComponents = [
   { title: 'Combobox', href: 'combobox' },
   { title: 'Combobox Lip', href: 'combobox-lip' },
   { title: 'Context Menu', href: 'context-menu' },
+  { title: 'Menubar', href: 'menu-bar' },
 ];
 
 export default function Home() {
