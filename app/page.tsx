@@ -25,6 +25,7 @@ const linksToComponents = [
   { title: 'Menubar', href: 'menu-bar' },
   { title: 'Input OTP', href: 'input-otp' },
   { title: 'Progress', href: 'progress' },
+  { title: 'Sheet', href: 'sheet' },
 ];
 
 export default function Home() {
