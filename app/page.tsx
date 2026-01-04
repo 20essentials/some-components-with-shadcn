@@ -24,6 +24,7 @@ const linksToComponents = [
   { title: 'Context Menu', href: 'context-menu' },
   { title: 'Menubar', href: 'menu-bar' },
   { title: 'Input OTP', href: 'input-otp' },
+  { title: 'Progress', href: 'progress' },
 ];
 
 export default function Home() {
