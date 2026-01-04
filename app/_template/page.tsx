@@ -1,3 +1,4 @@
+import { PageContainer } from '@/components/myComponents/body';
 import { Video } from '@/components/myComponents/video';
 
 export const metadata = {
@@ -6,8 +7,8 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <section className='min-h-screen w-full flex flex-wrap place-content-center overflow-hidden bg-cover bg-center cursor-pointer'>
+    <PageContainer>
       <Video src='/assets/.mp4' />
-    </section>
+    </PageContainer>
   );
 }
