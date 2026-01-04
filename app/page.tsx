@@ -23,6 +23,7 @@ const linksToComponents = [
   { title: 'Combobox Lip', href: 'combobox-lip' },
   { title: 'Context Menu', href: 'context-menu' },
   { title: 'Menubar', href: 'menu-bar' },
+  { title: 'Input OTP', href: 'input-otp' },
 ];
 
 export default function Home() {
