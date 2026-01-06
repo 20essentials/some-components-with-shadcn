@@ -8,7 +8,7 @@ export const metadata = {
 export default function Page() {
   return (
     <PageContainer>
-      <ImageBackground src='/assets/.avif' />
+      <ImageBackground src='/assets/sonner-bg.svg' />
     </PageContainer>
   );
 }

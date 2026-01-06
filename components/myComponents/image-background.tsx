@@ -6,7 +6,7 @@ export function ImageBackground(props: ComponentProps<'img'>) {
       {...props}
       src={props.src}
       alt='Image'
-      className={`w-full h-screen fixed z-0 ${props?.className}`}
+      className={`w-full h-screen fixed z-0 object-cover ${props?.className}`}
     />
   );
 }
