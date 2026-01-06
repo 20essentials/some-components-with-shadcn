@@ -141,3 +141,7 @@
     text-transform: capitalize !important;
   }
 }
+
+body {
+  min-height: 100vh;
+}
