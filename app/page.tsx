@@ -29,6 +29,7 @@ const linksToComponents = [
   { title: 'Skeleton', href: 'skeleton' },
   { title: 'Slider', href: 'slider' },
   { title: 'Sonner', href: 'sonner' },
+  { title: 'Tabs', href: 'tabs' },
 ];
 
 export default function Home() {
