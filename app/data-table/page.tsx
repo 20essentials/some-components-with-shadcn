@@ -17,8 +17,7 @@ export default async function Page() {
 
   return (
     <PageContainer>
-      <ImageBackground src='/assets/data-table-background.svg' />
-
+      <ImageBackground src='/assets/data-table-background.svg' className='invert-25' />
       <DataTable columns={columns} data={data} />
     </PageContainer>
   );

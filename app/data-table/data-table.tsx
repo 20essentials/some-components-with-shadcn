@@ -81,7 +81,7 @@ export function DataTable<TData, TValue>({
   });
 
   return (
-    <div>
+    <section className='bg-gray-900 p-8'>
       <div className='flex items-center justify-between py-4'>
         <Input
           placeholder='Filter anything...(client name, email, status)'
@@ -127,10 +127,6 @@ export function DataTable<TData, TValue>({
             className='ml-2'
             variant='destructive'
             onClick={() => {
-              // table.getSelectedRowModel().rows.forEach((row) => {
-              //   console.log(row.original);
-              // });
-
               const ids = table.getSelectedRowModel().rows.map(row => {
                 return (row.original as Payment).clientName;
               });
@@ -259,6 +255,6 @@ export function DataTable<TData, TValue>({
           </SelectContent>
         </Select>
       </div>
-    </div>
+    </section>
   );
 }
