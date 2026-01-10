@@ -1,9 +1,7 @@
 'use client';
-
 import { Badge } from '@/components/ui/badge';
 import { Payment } from '@/app/data-table/data/payments.data';
 import { ColumnDef, FilterFn, Row, SortDirection } from '@tanstack/react-table';
-
 import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
@@ -13,9 +11,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu';
-
 import { Checkbox } from '@/components/ui/checkbox';
-
 import {
   ChevronDownIcon,
   ChevronUpIcon,
@@ -23,13 +19,10 @@ import {
 } from '@radix-ui/react-icons';
 import { toast } from 'sonner';
 
-// import { toast } from "@/components/ui/use-toast";
-
 const myCustomFilterFn: FilterFn<Payment> = (
   row: Row<Payment>,
   columnId: string,
-  filterValue: string,
-  addMeta: (meta: any) => void
+  filterValue: string
 ) => {
   filterValue = filterValue.toLowerCase();
 
@@ -106,13 +99,13 @@ export const columns: ColumnDef<Payment>[] = [
     },
     cell: ({ row }) => {
       const status = row.getValue('status') as string;
-      const variant =
-        {
-          pending: 'secondary',
-          processing: 'info',
-          success: 'success',
-          failed: 'destructive'
-        }[status] ?? ('default' as any);
+      const variants = {
+        pending: 'secondary',
+        processing: 'info',
+        success: 'success',
+        failed: 'destructive'
+      } as const;
+      const variant = variants[status as keyof typeof variants] ?? 'default';
 
       return (
         <Badge variant={variant} capitalize>
