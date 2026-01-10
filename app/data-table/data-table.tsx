@@ -58,11 +58,12 @@ export function DataTable<TData, TValue>({
   const [currentStatus, setCurrentStatus] = useState('all');
   const [columnVisibility, setColumnVisibility] = useState<VisibilityState>({});
   const [rowSelection, setRowSelection] = useState({});
+  const [tableData, setTableData] = useState(data);
 
   const isDeleteVisible = Object.keys(rowSelection).length > 0;
 
   const table = useReactTable({
-    data,
+    data: tableData,
     columns,
     getCoreRowModel: getCoreRowModel(),
     getPaginationRowModel: getPaginationRowModel(),
@@ -81,8 +82,8 @@ export function DataTable<TData, TValue>({
   });
 
   return (
-    <section className='bg-gray-900 p-8'>
-      <div className='flex items-center justify-between py-4'>
+    <article className='bg-gray-900 p-4 select-none m-4 rounded-2xl'>
+      <div className='flex items-center justify-between pb-4'>
         <Input
           placeholder='Filter anything...(client name, email, status)'
           value={(table.getColumn('email')?.getFilterValue() as string) ?? ''}
@@ -127,11 +128,26 @@ export function DataTable<TData, TValue>({
             className='ml-2'
             variant='destructive'
             onClick={() => {
-              const ids = table.getSelectedRowModel().rows.map(row => {
+              /*  const ids = table.getSelectedRowModel().rows.map(row => {
                 return (row.original as Payment).clientName;
               });
 
-              console.log(ids);
+              console.log(ids); */
+
+              const selectedRows = table.getSelectedRowModel().rows;
+
+              setTableData(prev =>
+                prev.filter(
+                  row =>
+                    !selectedRows.some(
+                      selected =>
+                        (selected.original as Payment).id === (row as Payment).id
+                    )
+                )
+              );
+
+              // limpiamos la selección
+              table.resetRowSelection();
             }}
           >
             Delete
@@ -255,6 +271,6 @@ export function DataTable<TData, TValue>({
           </SelectContent>
         </Select>
       </div>
-    </section>
+    </article>
   );
 }
