@@ -31,6 +31,7 @@ const linksToComponents = [
   { title: 'Sonner', href: 'sonner' },
   { title: 'Tabs', href: 'tabs' },
   { title: 'Data Table', href: 'data-table' },
+  { title: 'Form', href: 'form' },
 ];
 
 export default function Home() {

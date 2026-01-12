@@ -3,6 +3,7 @@ import { ImageBackground } from '@/components/myComponents/image-background';
 import { payments } from '@/app/data-table/data/payments.data';
 import { DataTable } from './data-table';
 import { columns } from './columns';
+import { DataTableClient } from './data-table-client';
 
 async function fetchData() {
   return payments;
@@ -17,8 +18,12 @@ export default async function Page() {
 
   return (
     <PageContainer>
-      <ImageBackground src='/assets/data-table-background.svg' className='invert-25' />
-      <DataTable columns={columns} data={data} />
+      <ImageBackground
+        src='/assets/data-table-background.svg'
+        className='invert-25'
+      />
+      {/* <DataTable columns={columns} data={data} /> */}
+      <DataTableClient columns={columns} data={data} />
     </PageContainer>
   );
 }
