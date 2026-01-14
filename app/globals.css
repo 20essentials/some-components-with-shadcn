@@ -129,6 +129,19 @@
   }
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.am-container-cards {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: blue;
+}
+
 .am-navbar {
   position: absolute;
   width: 100%;
@@ -140,8 +153,4 @@
   .am-link {
     text-transform: capitalize !important;
   }
-}
-
-body {
-  min-height: 100vh;
 }

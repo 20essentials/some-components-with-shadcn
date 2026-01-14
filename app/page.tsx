@@ -1,4 +1,5 @@
 import { Background } from '@/components/background';
+import { ContainerCards } from '@/components/container-cards';
 import { Hero } from '@/components/hero';
 import Link from 'next/link';
 
@@ -42,13 +43,14 @@ export default function Home() {
     <>
       <Background />
       <Hero />
-      <nav className='am-navbar'>
+      {/*    <nav className='am-navbar'>
         {linksToComponents.map(({ title, href }, i) => (
           <Link key={i} href={href} className='am-link'>
             {title}
           </Link>
         ))}
-      </nav>
+      </nav> */}
+      <ContainerCards />
     </>
   );
 }
