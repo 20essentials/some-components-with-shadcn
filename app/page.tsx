@@ -1,3 +1,5 @@
+import { Background } from '@/components/background';
+import { Hero } from '@/components/hero';
 import Link from 'next/link';
 
 const linksToComponents = [
@@ -32,17 +34,21 @@ const linksToComponents = [
   { title: 'Tabs', href: 'tabs' },
   { title: 'Data Table', href: 'data-table' },
   { title: 'Form', href: 'form' },
-  { title: 'Theme Dark', href: 'theme-dark' },
+  { title: 'Theme Dark', href: 'theme-dark' }
 ];
 
 export default function Home() {
   return (
-    <nav className='am-navbar'>
-      {linksToComponents.map(({ title, href }, i) => (
-        <Link key={i} href={href} className='am-link'>
-          {title}
-        </Link>
-      ))}
-    </nav>
+    <>
+      <Background />
+      <Hero />
+      <nav className='am-navbar'>
+        {linksToComponents.map(({ title, href }, i) => (
+          <Link key={i} href={href} className='am-link'>
+            {title}
+          </Link>
+        ))}
+      </nav>
+    </>
   );
 }
