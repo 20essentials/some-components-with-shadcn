@@ -103,7 +103,7 @@ export function CardLocal({ username, href }: CardProps) {
           <div className='holo' />
           <img
             className='logo'
-            src='https://assets.codepen.io/13471/threads.svg'
+            src='/assets/threads.svg'
             alt='Threads logo'
           />
           <aside className='divider' />
@@ -112,7 +112,7 @@ export function CardLocal({ username, href }: CardProps) {
           <div className='holo' />
           <img
             className='logo'
-            src='https://assets.codepen.io/13471/threads.svg'
+            src='/assets/threads.svg'
             alt='Threads logo'
           />
           <div className='data'>
