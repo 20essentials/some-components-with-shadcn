@@ -6,7 +6,7 @@ export function ContainerCards() {
   return (
     <article className='am-container-cards'>
       {linksToComponents.map(({ title, href }, i) => (
-        <Card key={i} href={href} username={title} />
+        <Card delay={i} key={i} href={href} username={title} />
       ))}
     </article>
   );

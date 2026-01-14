@@ -10,9 +10,10 @@ import { useRouter } from 'next/navigation';
 interface CardProps {
   username: string;
   href: string;
+  delay: number;
 }
 
-export function CardLocal({ username, href }: CardProps) {
+export function CardLocal({ username, href , delay}: CardProps) {
   const appRef = useRef<HTMLDivElement>(null);
   const ticketRef = useRef<HTMLElement>(null);
 
@@ -63,7 +64,8 @@ export function CardLocal({ username, href }: CardProps) {
       '--r': '180deg',
       '--p': '0%',
       duration: speed,
-      ease: 'sine.in'
+      ease: 'sine.in',
+      delay
     });
     r.to(appRef.current, {
       '--r': '360deg',
@@ -130,7 +132,7 @@ export function CardLocal({ username, href }: CardProps) {
             </p>
             <a
               className='qr contrast-200'
-              href={'https://github.com/20essentials'}
+              href={href}
               target='_blank'
               rel='noreferrer'
             >
