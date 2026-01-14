@@ -1,11 +1,11 @@
 /* eslint-disable react-hooks/purity */
 'use client';
-import Link from 'next/link';
 
 import { useRef } from 'react';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import dynamic from 'next/dynamic';
+import { useRouter } from 'next/navigation';
 
 interface CardProps {
   username: string;
@@ -89,8 +89,15 @@ export function CardLocal({ username, href }: CardProps) {
     };
   }, []);
 
+  const router = useRouter();
+
   return (
-    <main ref={appRef} id='app' className='am-card-container'>
+    <main
+      ref={appRef}
+      id='app'
+      className='am-card-container'
+      onClick={() => router.push(href)}
+    >
       <section ref={ticketRef} className='ticket'>
         <header className='front'>
           <div className='holo' />
