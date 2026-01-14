@@ -32,6 +32,7 @@ const linksToComponents = [
   { title: 'Tabs', href: 'tabs' },
   { title: 'Data Table', href: 'data-table' },
   { title: 'Form', href: 'form' },
+  { title: 'Theme Dark', href: 'theme-dark' },
 ];
 
 export default function Home() {
