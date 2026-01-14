@@ -7,6 +7,8 @@
   --ticket: url(https://assets.codepen.io/13471/ticket-shape.svg);
   --ar: 20/30;
   --gutter: 8%;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 :root {
