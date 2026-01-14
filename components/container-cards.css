@@ -5,7 +5,7 @@
   --logo: url(https://assets.codepen.io/13471/threads.svg);
   --logopng: url(https://assets.codepen.io/13471/threads.png);
   --ticket: url(https://assets.codepen.io/13471/ticket-shape.svg);
-  --ar: 20/30;
+
   --gutter: 8%;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
@@ -86,14 +86,6 @@ button {
     opacity: 1;
     transform: translateY(0px);
   }
-}
-
-.am-card-container {
-  perspective: 1200px;
-  --o: 0;
-  --p: 100%;
-  --h: 50%;
-  --r: 0;
 }
 
 .ticket {
@@ -318,24 +310,26 @@ h1 {
 .am-card-container {
   color: black;
   font-family: 'Roboto Mono', monospace;
-
   display: grid;
   grid: 1fr/1fr;
   place-content: center;
   overflow: hidden;
   padding: 50px;
   z-index: 999;
+  width: 20vmax;
+  height: 30vmax;
+  perspective: 1200px;
+  --o: 0;
+  --p: 100%;
+  --h: 50%;
+  --r: 0;
 }
 
 .ticket {
   display: grid;
   grid-area: 1/1;
   width: 400px;
-  aspect-ratio: var(--ar);
-}
-
-@media screen and (max-width: 400px) {
-  .ticket {
-    --scale: 0.75;
-  }
+  /* aspect-ratio: 20 / 30; */
+  width: 20vmax;
+  height: 30vmax;
 }

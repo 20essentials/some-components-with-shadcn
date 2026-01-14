@@ -137,9 +137,14 @@ body {
 
 .am-container-cards {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
-  background-color: blue;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30vmax, 1fr));
+  padding: 2vmax;
+  gap: 2vmax;
+  place-items: center;
+  place-content: center;
 }
 
 .am-navbar {
