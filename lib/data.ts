@@ -31,5 +31,6 @@ export const linksToComponents = [
   { title: 'Data Table', href: 'data-table' },
   { title: 'Form', href: 'form' },
   { title: 'Theme Dark', href: 'theme-dark' },
-  { title: 'Alert', href: 'alert' }
+  { title: 'Alert', href: 'alert' },
+  { title: 'Breadcrumb', href: 'breadcrumb' },
 ].sort((a, b) => a.title.localeCompare(b.title));
