@@ -34,4 +34,5 @@ export const linksToComponents = [
   { title: 'Alert', href: 'alert' },
   { title: 'Breadcrumb', href: 'breadcrumb' },
   { title: 'Button Group', href: 'button-group' },
+  { title: 'Calendar Custom Cell', href: 'calendar-custom-cell' },
 ].sort((a, b) => a.title.localeCompare(b.title));
