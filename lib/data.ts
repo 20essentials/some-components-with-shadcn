@@ -39,4 +39,5 @@ export const linksToComponents = [
   { title: 'Chart Area', href: 'chart-area' },
   { title: 'Chart Bar', href: 'chart-bar' },
   { title: 'Chart Bar Horizontal', href: 'chart-bar-horizontal' },
+  { title: 'Chart Line', href: 'chart-line' },
 ].sort((a, b) => a.title.localeCompare(b.title));
