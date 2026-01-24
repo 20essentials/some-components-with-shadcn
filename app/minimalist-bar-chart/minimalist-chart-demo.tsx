@@ -1,6 +1,11 @@
 'use client';
 
-import { ChartContainer, type ChartConfig } from '@/components/ui/chart';
+import {
+  ChartContainer,
+  type ChartConfig,
+  ChartTooltip,
+  ChartTooltipContent
+} from '@/components/ui/chart';
 import { Bar, BarChart, CartesianGrid, XAxis } from 'recharts';
 
 const chartData = [
@@ -35,6 +40,7 @@ export function ChartExample() {
           axisLine={true}
           tickFormatter={value => value.slice(0, 3)}
         />
+        <ChartTooltip content={<ChartTooltipContent />} />
         <Bar dataKey='desktop' fill='var(--color-desktop)' radius={4} />
         <Bar dataKey='mobile' fill='var(--color-mobile)' radius={4} />
       </BarChart>
