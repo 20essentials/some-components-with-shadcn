@@ -37,4 +37,5 @@ export const linksToComponents = [
   { title: 'Calendar Custom Cell', href: 'calendar-custom-cell' },
   { title: 'Minimalist Bar Chart', href: 'minimalist-bar-chart' },
   { title: 'Chart Area', href: 'chart-area' },
+  { title: 'Chart Bar', href: 'chart-bar' },
 ].sort((a, b) => a.title.localeCompare(b.title));
