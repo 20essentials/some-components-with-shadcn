@@ -4,9 +4,12 @@ import {
   ChartContainer,
   type ChartConfig,
   ChartTooltip,
-  ChartTooltipContent
+  ChartTooltipContent,
+  ChartLegend,
+  ChartLegendContent
 } from '@/components/ui/chart';
 import { Bar, BarChart, CartesianGrid, XAxis } from 'recharts';
+import { Monitor, Phone } from 'lucide-react';
 
 const chartData = [
   { month: 'January', desktop: 186, mobile: 80 },
@@ -20,11 +23,14 @@ const chartData = [
 const chartConfig = {
   desktop: {
     label: 'Desktop',
-    color: '#2563eb'
+    color: 'var(--chart-1)',
+    icon: Monitor,
+
   },
   mobile: {
     label: 'Mobile',
-    color: '#60a5fa'
+    color: 'var(--chart-2)',
+    icon: Phone
   }
 } satisfies ChartConfig;
 
@@ -41,8 +47,9 @@ export function ChartExample() {
           tickFormatter={value => value.slice(0, 3)}
         />
         <ChartTooltip content={<ChartTooltipContent />} />
+        <ChartLegend content={<ChartLegendContent />} />
         <Bar dataKey='desktop' fill='var(--color-desktop)' radius={4} />
-        <Bar dataKey='mobile' fill='var(--color-mobile)' radius={4} />
+        <Bar  dataKey='mobile' fill='var(--color-mobile)' radius={4} />
       </BarChart>
     </ChartContainer>
   );
