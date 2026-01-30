@@ -48,4 +48,5 @@ export const linksToComponents = [
   { title: 'Collapsible File Tree', href: 'collapsible-file-tree' },
   { title: 'Combobox Chips', href: 'combobox-chips' },
   { title: 'Drawer', href: 'drawer' },
+  { title: 'Drawer Scrollable', href: 'drawer-scrollable' },
 ].sort((a, b) => a.title.localeCompare(b.title));
