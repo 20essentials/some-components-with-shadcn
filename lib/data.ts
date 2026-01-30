@@ -47,4 +47,5 @@ export const linksToComponents = [
   { title: 'Chart Radial', href: 'chart-radial' },
   { title: 'Collapsible File Tree', href: 'collapsible-file-tree' },
   { title: 'Combobox Chips', href: 'combobox-chips' },
+  { title: 'Drawer', href: 'drawer' },
 ].sort((a, b) => a.title.localeCompare(b.title));
