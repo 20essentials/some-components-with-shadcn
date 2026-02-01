@@ -49,4 +49,5 @@ export const linksToComponents = [
   { title: 'Combobox Chips', href: 'combobox-chips' },
   { title: 'Drawer', href: 'drawer' },
   { title: 'Drawer Scrollable', href: 'drawer-scrollable' },
+  { title: 'Dropdown Menu', href: 'dropdown-menu' },
 ].sort((a, b) => a.title.localeCompare(b.title));
