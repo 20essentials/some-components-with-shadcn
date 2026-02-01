@@ -50,4 +50,5 @@ export const linksToComponents = [
   { title: 'Drawer', href: 'drawer' },
   { title: 'Drawer Scrollable', href: 'drawer-scrollable' },
   { title: 'Dropdown Menu', href: 'dropdown-menu' },
+  { title: 'Dropdown Submenu', href: 'dropdown-submenu' },
 ].sort((a, b) => a.title.localeCompare(b.title));
