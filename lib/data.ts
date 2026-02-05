@@ -59,5 +59,5 @@ export const linksToComponents = [
   { title: 'Dropdown Complex', href: 'dropdown-complex' },
   { title: 'Empty Box', href: 'empty-box' },
   { title: 'Payment Method Fields', href: 'payment-method-fields' },
-  { title: 'Payment Method Fields', href: 'fields-address-information' },
+  { title: 'Fields Address Information', href: 'fields-address-information' },
 ].sort((a, b) => a.title.localeCompare(b.title));
