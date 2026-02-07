@@ -60,4 +60,5 @@ export const linksToComponents = [
   { title: 'Empty Box', href: 'empty-box' },
   { title: 'Payment Method Fields', href: 'payment-method-fields' },
   { title: 'Fields Address Information', href: 'fields-address-information' },
+  { title: 'Hover Card', href: 'hover-card' },
 ].sort((a, b) => a.title.localeCompare(b.title));
