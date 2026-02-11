@@ -63,4 +63,5 @@ export const linksToComponents = [
   { title: 'Hover Card', href: 'hover-card' },
   { title: 'Item', href: 'item' },
   { title: 'KBD', href: 'kbd' },
+  { title: 'KBD Tooltip', href: 'kdb-tooltip' },
 ].sort((a, b) => a.title.localeCompare(b.title));
