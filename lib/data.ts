@@ -66,4 +66,5 @@ export const linksToComponents = [
   { title: 'KBD Tooltip', href: 'kdb-tooltip' },
   { title: 'Navigation Menu', href: 'navigation-menu' },
   { title: 'Pagination', href: 'pagination' },
+  { title: 'Radio Group', href: 'radio-group' },
 ].sort((a, b) => a.title.localeCompare(b.title));
