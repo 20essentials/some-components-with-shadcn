@@ -73,7 +73,8 @@ export const linksToComponents: ThePages<Route>[] = [
   { title: 'KBD Tooltip', href: '/kdb-tooltip' },
   { title: 'Navigation Menu', href: '/navigation-menu' },
   { title: 'Pagination', href: '/pagination' },
-  { title: 'Radio Group', href: '/radio-group' }
+  { title: 'Radio Group', href: '/radio-group' },
+  { title: 'Resizable', href: '/resizable' }
 ] as const;
 
 export const linksToComponentsOrdered = linksToComponents.sort((a, b) =>
