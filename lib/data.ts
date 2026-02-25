@@ -77,6 +77,7 @@ export const linksToComponents: ThePages<Route>[] = [
   { title: 'Resizable', href: '/resizable' },
   { title: 'Scroll Area Horizontal', href: '/scroll-area-horizontal' },
   { title: 'Select Scrollable', href: '/select-scrollable' },
+  { title: 'Separator', href: '/separator' },
 ] as const;
 
 export const linksToComponentsOrdered = linksToComponents.sort((a, b) =>
