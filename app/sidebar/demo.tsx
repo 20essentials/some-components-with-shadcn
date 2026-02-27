@@ -1,4 +1,4 @@
-import { AppSidebar } from '@/components/app-sidebar';
+import { AppSidebar } from './components/app.sidebar';
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -14,7 +14,7 @@ import {
   SidebarTrigger
 } from '@/components/ui/sidebar';
 
-export default function Demo() {
+export function Sidebar() {
   return (
     <SidebarProvider>
       <AppSidebar />

@@ -1,6 +1,7 @@
 import { PageContainer } from '@/components/myComponents/body';
 import { ImageBackground } from '@/components/myComponents/image-background';
 import { Metadata } from 'next';
+import { Sidebar } from './demo';
 
 export const metadata: Metadata = {
   title: 'Sidebar'
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <PageContainer>
-      <ImageBackground src='/assets/sidebar.svg' />
+      <Sidebar />
     </PageContainer>
   );
 }
