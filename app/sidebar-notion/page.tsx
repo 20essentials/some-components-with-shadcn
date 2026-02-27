@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 import { Sidebar } from './demo';
 
 export const metadata: Metadata = {
-  title: 'Sidebar'
+  title: 'Sidebar Notion'
 };
 
 export default function Page() {
