@@ -81,6 +81,7 @@ export const linksToComponents: ThePages<Route>[] = [
   { title: 'Sidebar', href: '/sidebar' },
   { title: 'Sidebar Notion', href: '/sidebar-notion' },
   { title: 'Sidebar Calendar', href: '/sidebar-with-calendar' },
+  { title: 'Switch', href: '/switch' },
 ] as const;
 
 export const linksToComponentsOrdered = linksToComponents.sort((a, b) =>
