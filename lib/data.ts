@@ -83,6 +83,7 @@ export const linksToComponents: ThePages<Route>[] = [
   { title: 'Sidebar Calendar', href: '/sidebar-with-calendar' },
   { title: 'Switch', href: '/switch' },
   { title: 'Textarea', href: '/textarea' },
+  { title: 'Toggle', href: '/toggle' },
 ] as const;
 
 export const linksToComponentsOrdered = linksToComponents.sort((a, b) =>
