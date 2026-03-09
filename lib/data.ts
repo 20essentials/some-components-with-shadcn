@@ -85,6 +85,7 @@ export const linksToComponents: ThePages<Route>[] = [
   { title: 'Textarea', href: '/textarea' },
   { title: 'Toggle', href: '/toggle' },
   { title: 'Toggle Group', href: '/toggle-group' },
+  { title: 'Tooltip', href: '/tooltip' },
 ] as const;
 
 export const linksToComponentsOrdered = linksToComponents.sort((a, b) =>
