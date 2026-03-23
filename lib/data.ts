@@ -94,7 +94,11 @@ export const linksToComponents: ThePages<Route>[] = [
   {
     title: 'Login Page With Google And Email',
     href: '/login-page-with-google-and-email'
-  }
+  },
+  {
+    title: 'Login Page With Form And Image',
+    href: '/login-page-with-form-and-image'
+  },
 ] as const;
 
 export const linksToComponentsOrdered = linksToComponents.sort((a, b) =>
