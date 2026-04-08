@@ -161,3 +161,9 @@ body {
     text-transform: capitalize !important;
   }
 }
+
+@media (width <= 1111px) and (height <= 700px) {
+  .am-the-chart-container {
+    zoom: 0.7;
+  }
+}
