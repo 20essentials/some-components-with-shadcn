@@ -82,7 +82,7 @@ export function DataTable<TData, TValue>({
   });
 
   return (
-    <article className='bg-gray-900 p-4 select-none m-4 rounded-2xl'>
+    <article className='bg-gray-900 p-[1.2vmax] select-none  rounded-2xl am-your-datatable-baby'>
       <div className='flex items-center justify-between pb-4'>
         <Input
           placeholder='Filter anything...(client name, email, status)'
