@@ -173,6 +173,6 @@ body {
 }
 @media (width <= 1111px) and (orientation: portrait) {
   .am-your-datatable-baby {
-    transform: scale(0.6);
+    transform: scale(0.5);
   }
 }
